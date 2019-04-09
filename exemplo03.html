@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <p> <b>A soma de <span id="valora">2</span>+<span id="valorb">3</span> é 
+        <span id="resultado">5</span> </b> </p>
+
+    <script>
+       var a = 7;
+       var b = 8;
+       var r = a + b;
+
+       var oValorA = document.getElementById("valora");
+       var oValorB = document.getElementById("valorb");
+       var eResultado = document.getElementById("resultado");
+
+       oValorA.textContent = a;
+       oValorB.textContent = b;
+       eResultado.textContent = r;
+
+    </script>
+</body>
+</html>
