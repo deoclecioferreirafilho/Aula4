@@ -8,20 +8,30 @@
     <p> <b>A soma de <span id="valora">5</span>*<span id="valorb">7</span> é 
         <span id="resultado">5</span> </b> </p>
 
+            <button id="botao1" > Soma</button></p> </p>
+            <button id="botao2"> Multiplica</button>
+
+
     <script>
-
-
        var eValorA = document.getElementById("valora");
        var eValorB = document.getElementById("valorb");
        var eResultado = document.getElementById("resultado");
+       var eBotao1 = document.getElementById ("botao1");
+       var eBotao2 = document.getElementById ("botao2");
         
-        
+        eBotao1.addEventListener("click", calculaResultado);
+        eBotao2.addEventListener("click", calculaResultadoMult);
+
+        eValorA.isContentEditable = true;
+        eValorB.isContentEditable = true;
+
         function calculaResultadoMult()
         {
         var a = eValorA.textContent;
         var b = eValorB.textContent;
         var r = a * b;
         }
+
 
         function calculaResultado()
         {
@@ -31,7 +41,7 @@
         }
        
 
-        eResultado.textContent = r;
+        //eResultado.textContent = r;
 
 
       
