@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+<body>
+    <p> <b>A soma de <span id="valora">5</span>*<span id="valorb">7</span> é 
+        <span id="resultado">5</span> </b> </p>
+
+    <script>
+
+
+       var eValorA = document.getElementById("valora");
+       var eValorB = document.getElementById("valorb");
+
+        //var a = eValorA.textContent;
+        //var b = eValorB.textContent;
+
+        var a = Number(eValorA.textContent);
+        var b = Number(eValorB.textContent);
+
+       //var r = a * b;
+       var r = a + b;
+
+       var eResultado = document.getElementById("resultado");
+
+        eResultado.textContent = r;
+
+
+      
+
+    </script>
+</body>
+</html>
